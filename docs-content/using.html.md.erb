@@ -42,33 +42,6 @@ they should use different service instances.
 
 ### Installing the service broker
 
-The service broker can either be pushed as an app, or deployed from a tile.
-
-#### Using `cf push`
-
-- Edit `manifest.yml` and edit the `PRECONFIGURED_PLANS` variable. This variable
-  is a list of service plans; each plan is configured to connect to a
-  CockroachDB instance (this can be a single node, or a load balancer on top of
-  a cluster).
-
-- Push the service broker "app":
-  ```
-  cf push
-  ```
-  You should see the service broker app and hostname under `cf apps`.
-
-- Create the service broker:
-  ```
-  cf create-service-broker cockroachdb-service-broker user pass https://<hostname>
-  ```
-  The user and password are `SECURITY_USER_NAME` and `SECURITY_USER_PASSWORD`
-  in `manifest.yml`; the hostname is the one shown by `cf apps`.
-
-The `cf service-brokers` command should show `cockroachdb-service-broker`.
-
-
-#### Using the tile
-
 The service broker is available as a CF tile. You can build the tile using the
 [Tile Generator](https://docs.pivotal.io/tiledev/tile-generator.html) by running
 `build.sh`; then upload the `product/*.pivotal` file to CF (using the ops

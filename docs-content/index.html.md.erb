@@ -9,35 +9,19 @@ The CockroachDB Service Broker for PCF tile is currently in beta and is intended
 Do not use this product in a PCF production environment.
 </p>
 
-**Note**: This description will appear under **OVERVIEW** in the tile's listing on 
-[Pivotal Network](http://network.pivotal.io).
-
 ## <a id='overview'></a>Overview
-
-**The overview describes the service that your product offers to PCF developers. 
-Make sure to overview the features of the integration.
-Don't focus only on the overview of your product that is being integrated.
-See below for an example.**
 
 The CockroachDB Service Broker for PCF will allow PCF Admins to offer developers access to logically isolated databases
 within a shared, externally deployed CockroachDB cluster.
 
-**Note**: This overview will appear under **OVERVIEW**, combined with the description above in the tile's listing on 
-[Pivotal Network](http://network.pivotal.io).
-
 ## <a id='features'></a>Key Features
 
-**Note**: This feature list will appear under **FEATURES** in the tile's listing on 
-[Pivotal Network](http://network.pivotal.io). 
-
-CockroachDB Service Broker for PCF includes the following key features:
-
-* This creates logically isolated databases in an existing CockroachDB cluster.
+The CockroachDB Service Broker for PCF creates logically isolated databases in an existing cluster.
 
 
 ## <a id="snapshot"></a>Product Snapshot
 
-The following table provides version and version-support information about PRODUCT-NAME.
+The following table provides version and version-support information about CockroachDB Service Broker for PCF.
 
 <table class="nice">
     <th>Element</th>
@@ -48,7 +32,7 @@ The following table provides version and version-support information about PRODU
     </tr>
     <tr>
         <td>Release date</td>
-        <td>February 8,2018</td>
+        <td>February 8, 2018</td>
     </tr>
     <tr>
         <td>Software component version</td>
@@ -60,7 +44,7 @@ The following table provides version and version-support information about PRODU
     </tr>
     <tr>
         <td>Compatible Pivotal Application Service (formerly known as Elastic Runtime) version(s)</td>
-        <td>vYOUR-COMPATIBLE-PIVOTAL-APPLICATION-SERVICE-VERSION (Ex. v1.11.x, v1.12.x, and v2.0.X)</td>
+        <td>v2.0.X</td>
     </tr>
     <tr>
         <td>IaaS support</td>
@@ -77,16 +61,16 @@ The following table provides version and version-support information about PRODU
 
 CockroachDB Service Broker for PCF has the following requirements:
 
-+ A CockroachDB cluster thats not running in secure mode.
++ A CockroachDB cluster running in insecure mode.
 
 ## <a id="limitations"></a>Limitations
 
-+ CockroachDB secure mode is not supported in this release
++ CockroachDB's secure mode is not supported in this release
 
 ## <a id="feedback"></a>Feedback
 
 If you have a feature request, questions, or information about a bug, please email
-[Pivotal Cloud Foundry Feedback](mailto:cf-feedback@pivotal.io) list or send an email to YOUR-SUPPORT-EMAIL.
+[Pivotal Cloud Foundry Feedback](mailto:cf-feedback@pivotal.io) list, leave feedback on the [CockroachDB Forum](https://forum.cockroachlabs.com/) or create a ticket on [our github](https://github.com/cockroachdb/pcf-crdb-service-broker).
 
 ## <a id='license'></a>License
 
